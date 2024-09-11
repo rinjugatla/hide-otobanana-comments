@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hide Otobanana comments
 // @namespace    https://x.com/rin_jugatla
-// @version      2024-09-11
+// @version      2024-09-12
 // @description  otobananaのコメントを非表示にします
 // @author       rin_jugatla
 // @match        https://otobanana.com/*
