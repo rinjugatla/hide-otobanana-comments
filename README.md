@@ -12,4 +12,4 @@
 
 ## 配布先
 
-* [Hide Otobanana comments](hhttps://greasyfork.org/ja/scripts/507932-hide-otobanana-comments)
+* [Hide Otobanana comments](https://greasyfork.org/ja/scripts/507932-hide-otobanana-comments)
