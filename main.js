@@ -10,20 +10,34 @@
 // @license MIT
 // ==/UserScript==
 
-let timerId = null;
+/**
+ * タイトルタグを監視
+ * 
+ * タイトルに変更があったときのみコメントの非表示を試みる
+ */
+const watchTitle = () => {
+    const observer = new MutationObserver(() => { hideComments(); });
+    const titleElement = document.querySelector('title');
+    if (!titleElement) { return; }
 
+    observer.observe(titleElement, { childList: true });
+}
+
+/**
+ * コメント欄を非表示に変更
+ */
 const hideComments = () => {
     const commentElements = document.getElementsByClassName("comment-container");
     if (!commentElements) { return; }
 
     const element = commentElements[0];
     if (!element) { return; }
+
     element.style.display = 'none';
 }
 
 (function () {
     'use strict';
 
-    console.log("oto 0");
-    timerId = setInterval(hideComments, 1000);
+    watchTitle();
 })();
